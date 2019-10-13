@@ -157,4 +157,4 @@ ant.post('/wx/talk', async (rr) => {
 
 });
 
-ant.ants('localhost', 8192);
+ant.ants(80,'0.0.0.0');
