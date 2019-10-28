@@ -56,4 +56,4 @@ ant.post('/wx/talk', async rr => {
 });
 
 //这里请把端口换成自己服务器反向代理的端口号
-ant.ants('localhost', 8192);
+ant.ants(80, '0.0.0.0');

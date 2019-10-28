@@ -4,7 +4,7 @@ const crypto = require('crypto');
 var ar = new awy();
 
 ar.get('/wx/talk', async rr => {
-    var token = 'msgtalk';
+    var token = 'wx123';
 
     var get_str = [
         rr.req.GetQueryParam('nonce', ''), 
@@ -24,7 +24,7 @@ ar.get('/wx/talk', async rr => {
     }
 });
 
-ar.run('localhost', 2020);
+ar.run(80,'0.0.0.0' );
 /*
 本地测试：
 curl 'https://localhost:2020/wx/talk?signature=561f18d897b08a1d5d5633e03ac9899cc1018ac2&echostr=4701824731143159513&timestamp=1546397393&nonce=1536243785'
